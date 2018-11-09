@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageid"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/nameid"
+        android:paddingBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imageid"
+        android:layout_toEndOf="@id/imageid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="name" />
+    <TextView
+        android:id="@+id/sectionid"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="3dp"
+        android:layout_toEndOf="@id/imageid"
+        android:layout_toRightOf="@id/imageid"
+        android:layout_below="@id/nameid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="section" />
+    <TextView
+        android:id="@+id/idid"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/imageid"
+        android:layout_toRightOf="@id/imageid"
+        android:layout_below="@id/sectionid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="id" />
+</RelativeLayout>
